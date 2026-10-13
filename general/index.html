@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 Direct Ingest download</title>
+<meta name="description" content="Download S3 Direct Ingest by Drone Harmony.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Colours from the Drone Harmony brand tokens (nucleus/packages/brand). */
+  :root {
+    --bg-0: #0b0e14;
+    --bg-2: #11151d;
+    --text-strong: #f2f4f8;
+    --text-mid: rgba(242, 244, 248, 0.72);
+    --text-dim: rgba(242, 244, 248, 0.48);
+    --line: rgba(242, 244, 248, 0.1);
+    --accent: #f47b47;
+    --accent-glow: rgba(244, 123, 71, 0.35);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px 32px;
+    background: radial-gradient(1200px 600px at 50% -10%, rgba(244, 123, 71, 0.12), transparent 60%), var(--bg-0);
+    color: var(--text-strong);
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .logo { height: 44px; width: auto; margin-bottom: 40px; }
+  .card {
+    width: 100%;
+    max-width: 520px;
+    padding: 36px 32px 32px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--bg-2);
+    text-align: center;
+  }
+  h1 { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; }
+  .tag {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--bg-0);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    vertical-align: 4px;
+  }
+  .lead { margin: 12px 0 28px; color: var(--text-mid); line-height: 1.5; }
+  .download {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: var(--bg-0);
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 8px 28px var(--accent-glow);
+  }
+  .download:hover { filter: brightness(1.08); }
+  .meta { margin-top: 12px; color: var(--text-dim); font-size: 0.85rem; }
+  .steps {
+    margin: 28px 0 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--line);
+    text-align: left;
+    color: var(--text-mid);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+  .steps ol { margin: 8px 0 0; padding-left: 20px; }
+  .steps strong { color: var(--text-strong); }
+  footer { margin-top: 32px; color: var(--text-dim); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+  <img class="logo" src="../assets/dh-logo.png" alt="drone harmony">
+  <main class="card">
+    <h1>S3 Direct Ingest</h1>
+    <p class="lead">Copies your field data from the card to your S3 bucket, checks every byte, and never touches the originals.</p>
+    <a class="download" href="https://github.com/adamsaciuk/s3-direct-ingest-releases/releases/download/general-v2.0.0/S3-Direct-Ingest_2.0.0_x64-setup.exe">Download for Windows</a>
+    <div class="meta">Version 2.0.0 &middot; 29 MB &middot; Windows 10 and 11</div>
+    <div class="steps">
+      <strong>Install</strong>
+      <ol>
+        <li>Open the downloaded file. Already have version 1? Install this over it: your keys and upload history are kept.</li>
+        <li>If Windows says "Windows protected your PC", choose <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+        <li>Sign in with your Drone Harmony account.</li>
+      </ol>
+      <p>New versions arrive inside the app.</p>
+    </div>
+  </main>
+  <footer>Drone Harmony</footer>
+</body>
+</html>
